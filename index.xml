@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Test Website</title>
+        <link>https://kyrie1218.github.io/</link>
+        <description>Test Website</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 22 Apr 2022 20:22:18 &#43;0800</lastBuildDate>
+            <atom:link href="https://kyrie1218.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Hello</title>
+    <link>https://kyrie1218.github.io/hello/</link>
+    <pubDate>Fri, 22 Apr 2022 20:22:18 &#43;0800</pubDate><author>
+        <name>Kyrie9527</name>
+    </author><guid>https://kyrie1218.github.io/hello/</guid>
+    <description><![CDATA[$$ \sum_{t=0}^{\infty}\beta U(c_{t}) $$ 本文参考Acemoglu（2019）《现代经济增长导论》上册第8章的标准Ramsey模型的设定。 1. 模型设定时间与参与人 构造一个Ram]]></description>
+</item></channel>
+</rss>
