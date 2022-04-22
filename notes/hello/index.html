@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">Hello - Test Website</title><meta name="Description" content=""><meta property="og:title" content="Hello" />
+<meta property="og:description" content="$$ \sum_{t=0}^{\infty}\beta U(c_{t}) $$ 本文参考Acemoglu（2019）《现代经济增长导论》上册第8章的标准Ramsey模型的设定。 1. 模型设定时间与参与人 构造一个Ram" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyrie1218.github.io/notes/hello/" /><meta property="article:section" content="notes" />
+<meta property="article:published_time" content="2022-04-22T20:22:18+08:00" />
+<meta property="article:modified_time" content="2022-04-22T20:22:18+08:00" /><meta property="og:site_name" content="我的测试网站" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hello"/>
+<meta name="twitter:description" content="$$ \sum_{t=0}^{\infty}\beta U(c_{t}) $$ 本文参考Acemoglu（2019）《现代经济增长导论》上册第8章的标准Ramsey模型的设定。 1. 模型设定时间与参与人 构造一个Ram"/>
+<meta name="application-name" content="Test Website">
+<meta name="apple-mobile-web-app-title" content="Test Website">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://kyrie1218.github.io/notes/hello/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Hello",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/kyrie1218.github.io\/notes\/hello\/"
+        },"genre": "notes","wordcount":  2885 ,
+        "url": "https:\/\/kyrie1218.github.io\/notes\/hello\/","datePublished": "2022-04-22T20:22:18+08:00","dateModified": "2022-04-22T20:22:18+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Kyrie9527"},"author": {
+                "@type": "Person",
+                "name": "Kyrie9527"
+            },"description": ""
+    }
+    </script></head>
+
+<body header-desktop="" header-mobile=""><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Test Website">Test Website</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/notes/"> 笔记 </a><a class="menu-item" href="/papers/"> 学术论文 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="#" onclick="return false;" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Test Website">Test Website</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/notes/" title="">笔记</a><a class="menu-item" href="/papers/" title="">学术论文</a><a class="menu-item" href="/categories/" title="">分类</a><a href="#" onclick="return false;" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Hello</h1><div class="content" id="content"><p>$$
+\sum_{t=0}^{\infty}\beta U(c_{t})
+$$</p>
+<p>本文参考Acemoglu（2019）《现代经济增长导论》上册第8章的标准Ramsey模型的设定。</p>
+<h2 id="1-模型设定" class="headerLink">
+    <a href="#1-%e6%a8%a1%e5%9e%8b%e8%ae%be%e5%ae%9a" class="header-mark"></a>1. 模型设定</h2><p><strong>时间与参与人</strong> 构造一个Ramsey经济体，时间是连续的，且自时点$0$开始走向无穷。经济体内有两类参与人：代表性家庭和代表性企业。他们的数量均标准化为1。另外，家庭和企业均是无限存活的。</p>
+<p><strong>资源和技术禀赋</strong> 在初始时点$t=0$时，家庭拥有资本$K(0)$，人口$L(0)$, 且家庭成员无弹性供给单位劳动，因此，家庭也拥有劳动$L(0)$。同时，家庭还拥有劳动加强的生产技术，技术水平为$A(0)$，因此，家庭拥有$A(0)L(0)$的有效劳动。</p>
+<p><strong>运行规则</strong> 参与人各司其职且遵守竞争性市场规则，企业向家庭租赁有效劳动$AL$和资本$K$以生产最终商品$Y$；家庭出租劳动$AL$和资本$K$获得收入以消费$C$和投资$I$；由于经济体是封闭的，商品$Y$完全被内循环，即所有商品完全被家庭消费或者投资掉。</p>
+<p>另外，企业和家庭均是价格接受者。资本和劳动的交易价格$r,,w$由参与人们“看不见的手”来决定，且市场无摩擦，要素市场即时完全出清，不存在非自愿失业和库存。</p>
+<p>现在经济体开始启动$t&gt;0$, 家庭和企业在各自的约束下追求各自的目标：</p>
+<p><strong>家庭的目标与约束</strong> 家庭内每个成员均生育$(1+n)$个孩子，即人口增长率为常数$n$，即家庭在时点$t$的人口和劳动数量为
+$$
+L(t)=L(0)e^{nt}
+$$
+同时存在外生劳动加强型技术进步，技术进步率为常数$g$, 即家庭在时点$t$的技术水平为
+$$
+A(t) =A(0)e^{gt}
+$$
+家庭内部成员同质，统一决策。因此，家庭内部间采取平均分配原则。每个成员均从人均消费$c(t)$中获得即时效用$u[c(t)]$，即时效用函数为CRRA形式：
+$$
+u[c(t)]= \begin{cases} \frac{c(t)^{1-\theta}-1}{1-\theta} &amp; \theta \neq 1,,\theta \geq0, \ \ln c(t) &amp; \theta =1.\end{cases}
+$$
+其中，$\theta$为相对风险厌恶系数，其倒数$1/\theta$为消费的跨期替代弹性。家庭统一决策最大化家庭终生效用，且家庭内成员均有相同的时间偏好，即主观贴现率恒为$\rho$，其中$0&lt;\rho&lt;1$。对应的家庭终生效用函数$U_{0}$如下：
+$$
+U_{0}=\int_{t=0}^{\infty}e^{-(\rho-n)t}u[c(t)]dt
+$$
+这意味着，时间贴现因子为$\beta = e^{-\rho}$。显然，我们需要保证终生效用是有限的，否则优化没有意义。这意味着我们需要假设$\rho&gt;n$，即主观贴现率必须大于人口增长率。我们将此假设设为假设1如下：</p>
+<p><strong>假设0</strong> （贴现率假设）$\rho &gt;n$。</p>
+<p>家庭效用最大化受到预算流平衡和借贷限制。家庭将收入用于消费和投资，即家庭预算流约束如下：
+$$
+I(t)=r(t)K(t)+w(t)A(t)L(t)-c(t)L(t)
+$$
+其中，$w(t)$为单位有效劳动的工资率，资本面临外生折旧，折旧率为常数$\delta \in (0,1]$，因此投资一部分用于折旧弥补$\delta K(t)$，另一部分才是有效投资$\dot{K}(t)$，此时可改写家庭预算流约束如下：
+$$
+\dot{K}(t)=[r(t)-\delta]K(t)+w(t)A(t)L(t)-c(t)L(t)
+$$
+另外，由于不存在流动性约束，为保证跨期预算约束有界，需要防止庞氏骗局，施加非庞氏条件如下：
+$$
+\lim_{t\to \infty}K(t)e^{-\int_{t=0}^{\infty}[r(s)-\delta]ds} = 0
+$$
+<strong>企业的目标与约束</strong> 代表性企业具有新古典生产技术，它向家庭以竞争性价格租赁资本$K(t)$并雇佣有效劳动$A(t)L(t)$生产单一同质产品$Y(t)$以最大化利润。其对应的生产函数如下：
+$$
+Y(t)=[K(t)]^{\alpha}[A(t)L(t)]^{1-\alpha}
+$$
+其中$\alpha \in (0,1)$为资本在总产出的份额，且利润最大化的目标为
+$$
+\Pi(t) =\max_{K_{t},L_{t}} Y(t)-r(t)K(t)-w(t)A(t)L(t)
+$$
+显然，这是个静态最优化问题，对应的一阶最优条件为：
+$$
+r(t)=\alpha [K(t)]^{\alpha-1}[A(t)L(t)]^{1-\alpha}
+$$</p>
+<p>$$
+w(t) = (1-\alpha)[K(t)]^{\alpha}[A(t)L(t)]^{-\alpha}
+$$</p>
+<p>即要素的边际产出等于要素价格。</p>
+<h2 id="2-ramsey模型求解" class="headerLink">
+    <a href="#2-ramsey%e6%a8%a1%e5%9e%8b%e6%b1%82%e8%a7%a3" class="header-mark"></a>2. Ramsey模型求解</h2><p><strong>重述家庭和企业设定的人均形式</strong></p>
+<p>由于家庭成员是同质的，因此可以使用人均形式来简化分析。定义人均的资本存量$k(t)\equiv \frac{K(t)}{L(t)}$和人均消费$c(t)\equiv \frac{C(t)}{L(t)}$，家庭最优化问题转换为人均形式如下：
+$$
+\max_{c(t)} \int_{t=0}^{\infty}e^{-(\rho-n)t}u[c(t)]dt,\quad \rho&gt;n
+$$</p>
+<p>$$
+S.t. \qquad \dot{k}(t)=[r(t)-\delta-n]k(t)+w(t)A(t)-c(t)
+$$</p>
+<p>$$
+\qquad  \lim_{t\to \infty}k(t)e^{-\int_{t=0}^{\infty}[r(s)-\delta-n]ds} = 0
+$$</p>
+<p>$$
+\qquad u[c(t)]= \begin{cases} \frac{c(t)^{1-\theta}-1}{1-\theta} &amp; \theta \neq 1,,\theta \geq 0 \ \ln c(t) &amp; \theta =1.\end{cases}
+$$</p>
+<p><strong>家庭最优化</strong> 家庭动态最优化使用最优控制方法。原问题转换贴现形式的H函数为：
+$$
+\mathcal{H}^{Discount} =e^{-(\rho-n)t}u[c(t)]+\lambda(t){[r(t)-\delta-n]k(t)+w(t)A(t)-c(t)}
+$$
+家庭最优化内点解必要条件则为：
+$$
+\mathcal{H}_{c}=e^{-(\rho-n)t}u&rsquo;(c(t))-\lambda(t)=0
+$$</p>
+<p>$$
+\mathcal{H}_k =\lambda(t)[r(t)-\delta-n]=-\dot{\lambda}(t)
+$$</p>
+<p>$$
+\lim_{t\to\infty}\lambda(t)k(t)=0
+$$</p>
+<p>我们从如上H系统中得到什么信息呢？为了更好地说明经济含义，将其转换为现值形式，令$\mu(t)=e^{(\rho-n)t}\lambda(t)$， 则上述必要条件变为：
+$$
+u&rsquo;(c(t))-\mu(t)=0
+$$</p>
+<p>$$
+\mu(t)[r(t)-\delta-n]=-\dot{\mu}(t)+(\rho-n)\mu(t)
+$$</p>
+<p>$$
+\lim_{t\to\infty}e^{-(\rho-n)t}\mu(t)k(t)=0
+$$</p>
+<p>首先，第一个条件可以得知消费的现值影子价格$\mu(t)$:
+$$
+\mu(t)=u&rsquo;(c(t))
+$$
+其次，第二个条件可以得到消费的现值影子价格的变动率$\frac{\dot{\mu}}{\mu}$:
+$$
+\frac{\dot{\mu}}{\mu}=-[r(t)-\delta-\rho]
+$$
+进一步，$\frac{\dot{\mu}}{\mu}$替代入影子价格的决定后得
+$$
+-\frac{\dot{\mu}}{\mu}=-\frac{u&rsquo;&rsquo;(c(t))c(t)}{u&rsquo;(c(t))}\frac{\dot{c}(t)}{c(t)}
+$$
+其中，$\epsilon_{u}(c(t))\equiv -\frac{u&rsquo;&rsquo;(c(t))c(t)}{u&rsquo;(c(t))}$为相对风险厌恶系数，在本文CRRA效用函数中，$\epsilon_{u}(c(t))$为常数$\theta$。因此，我们得到消费增长率的决定方程如下：
+$$
+\frac{\dot{c}}{c}=[r(t)-\delta-\rho]\cdot\frac{1}{\theta}
+$$
+其中, $1/\theta$ 又表示消费的跨期替代弹性。</p>
+<p>最后，分析第三个条件：横截性条件。根据第二条件中$\frac{\dot{\mu}}{\mu}$的决定可知,，给定$c(0)$则有$\mu(0)$，即求解$\mu(t)$的微分方程有
+$$
+\mu(t)=u&rsquo;[c(0)]e^{-\int_{0}^{t}[r(s)-\delta-\rho]ds}
+$$
+则第三个条件变为
+$$
+\lim_{t\to\infty}k(t)e^{-\int_{0}^{t}[r(s)-\delta-n]ds}=0
+$$
+这也将自动满足非庞氏条件。</p>
+<p>总结，家庭最优化的动态行为如下：
+$$
+\dot{k}(t)=[r(t)-\delta-n]k(t)+w(t)A(t)-c(t) \
+\frac{\dot{c}}{c}=[r(t)-\delta-\rho]\cdot\frac{1}{\theta} \
+\lim_{t\to\infty}k(t)e^{-\int_{0}^{t}[r(s)-\delta-n]ds}=0
+$$
+<strong>企业最优化</strong> 由于代表性企业使用劳动增长型技术，因此可以使用人均有效形式来简化分析。定义人均有效资本存量（或有效资本劳动比）$\hat{k}(t)\equiv \frac{K(t)}{A(t)L(t)}$，人均有效产出$\hat{y}(t)\equiv \frac{Y(t)}{A(t)L(t)}$，则企业人均有效形式的最优化条件如下：
+$$
+r(t) = \alpha [\hat{k}(t)]^{\alpha-1}
+$$</p>
+<p>$$
+w(t)=(1-\alpha)[\hat{k}(t)]^{\alpha}
+$$</p>
+<p><strong>一般均衡</strong> 要素市场完全出清，家庭和企业最优化联合：</p>
+<p>$$
+U_{0}=\int_{t=0}^{\infty}e^{-(\rho-n)t}u[c(t)]dt \
+\qquad u[c(t)]= \begin{cases} \frac{c(t)^{1-\theta}-1}{1-\theta} &amp; \theta \neq 1,,\theta \geq0 \ \ln c(t) &amp; \theta =1.\end{cases} \
+\dot{k}(t)=[r(t)-\delta-n]k(t)+A(t)w(t)-c(t) \
+\frac{\dot{c}(t)}{c(t)}=[r(t)-\delta-\rho]\cdot\frac{1}{\theta} \
+\lim_{t\to\infty}k(t)e^{-\int_{0}^{t}[r(s)-\delta-n]ds}=0 <br>
+r(t) = \alpha [\hat{k}(t)]^{\alpha-1} \
+w(t)=(1-\alpha)[\hat{k}(t)]^{\alpha} \
+k(0),, c(0),,A(0) ,\text{given}.
+$$</p>
+<p>为了，更好地理解，我们将其全部转换为人均有效形式，根据定义人均有效消费$\hat{c}(t)=\frac{c(t)}{A(t)}$和人均有效资本存量$\hat{k}(t)=\frac{k(t)}{A(t)}$以及技术进步率$\frac{\dot{A}(t)}{A(t)}=g$则知：
+$$
+\frac{\dot{c}(t)}{c(t)}=\frac{\dot{\hat{c}}(t)}{\hat{c}(t)}+g
+$$</p>
+<p>$$
+\frac{\dot{k}(t)}{k(t)}=\frac{\dot{\hat{k}}(t)}{\hat{k}(t)}+g
+$$</p>
+<p>则人均有效形式的Ramsey系统如下：</p>
+<p>$$
+U_{0}=\int_{t=0}^{\infty}e^{-(\rho-n)t}u[\hat{c}(t)]dt \
+\qquad u[\hat{c}(t)]= \begin{cases} \frac{[A(0)e^{gt}\hat{c}(t)]^{1-\theta}-1}{1-\theta}, &amp; \theta \neq 1,,\theta \geq0 \ \ln \hat{c}(t)+\ln A(0)+gt, &amp; \theta =1.\end{cases} \
+\dot{\hat{k}}(t)=[r(t)-\delta-n-g]\hat{k}(t)+w(t)-\hat{c}(t) \
+\frac{\dot{\hat{c}}(t)}{\hat{c}(t)}=[r(t)-\delta-\rho-\theta g]\cdot\frac{1}{\theta} \
+\lim_{t\to\infty}\hat{k}(t)e^{-\int_{0}^{t}[r(s)-\delta-n-g]ds}=0 \
+r(t) = \alpha [\hat{k}(t)]^{\alpha-1} \
+w(t)=(1-\alpha)[\hat{k}(t)]^{\alpha} \
+\hat{k}(0),, \hat{c}(0) ,\text{given}.
+$$
+以上便刻画了整个标准Ramsey模型的动态系统。</p>
+<p>为简化分析，暂时不讨论稳态的存在唯一性。特别地，当$t \to \infty$时，经济体趋于唯一稳态。则有 $\hat{k}(t) \to \hat{k}^{<em>},,\hat{c}(t) \to \hat{c}^{</em>}$ 。其中，根据消费增长率方程（Euler方程）知$r(t) \to r^{*}$:</p>
+<p>$$
+r^{*}=\delta+\rho+\theta g
+$$</p>
+<p>代入资本价格决定方程知：</p>
+<p>$$\alpha (\hat{k}^{*})^{\alpha-1}=\delta+ \rho+\theta g$$</p>
+<p>这联立横截性条件知，Ramsey模型解中内涵如下条件：</p>
+<p>$$
+\rho &gt; n+(1-\theta)g
+$$</p>
+<p>根据资本积累方程和要素价格方程知：
+$$\hat{c}^{<em>}=(\hat{k}^{</em>})^{\alpha}-(n+g+\delta) \hat{k}^{*}$$</p>
+<p>总结，Ramsey经济体的稳态决定如下：</p>
+<p>$$
+\alpha (\hat{k}^{<em>})^{\alpha-1}=\delta+ \rho+\theta g \
+\hat{c}^{</em>}=(\hat{k}^{<em>})^{\alpha}-(n+g+\delta) \hat{k}^{</em>} \
+\rho &gt; n+(1-\theta) g
+$$</p>
+<p>进而可以获得稳态的产出和福利水平。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">xxxx</span>
+</span></span><span class="line"><span class="cl"><span class="n">hhhhhhhh</span>
+</span></span><span class="line"><span class="cl"><span class="n">jdjdjdj</span>
+</span></span><span class="line"><span class="cl"><span class="n">hhhdhdh</span>
+</span></span><span class="line"><span class="cl"><span class="n">hhdhdhhd</span>
+</span></span><span class="line"><span class="cl"><span class="n">dhhdhdhd</span>
+</span></span><span class="line"><span class="cl"><span class="n">hdhhdh</span>
+</span></span><span class="line"><span class="cl"><span class="n">hhdhdh</span>
+</span></span><span class="line"><span class="cl"><span class="n">hdhhdhd</span>
+</span></span><span class="line"><span class="cl"><span class="n">hjdhhdh</span>
+</span></span><span class="line"><span class="cl"><span class="n">hdhdhh</span>
+</span></span><span class="line"><span class="cl"><span class="n">dhdhhdh</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>c</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>22</td>
+<td>65</td>
+</tr>
+<tr>
+<td>he</td>
+<td>77</td>
+<td>5</td>
+</tr>
+<tr>
+<td>hhh</td>
+<td>.</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<div class="mermaid" id="id-1"></div><p>去露营啦! :tent: 很快就回来.</p>
+<p>真开心! :joy:</p>
+</div></div></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.96.0">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">Kyrie9527</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"data":{"id-1":"graph TD;\n    A--\u003eB;\n    A--\u003eC;\n    B--\u003eD;\n    C--\u003eD;"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":false,"left":"$","right":"$"}],"strict":false},"mermaid":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/mermaid/mermaid.min.js" defer></script><script type="text/javascript" src="/js/mermaid.min.js" defer></script><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/mermaid/mermaid.min.css"></div>
+</body>
+
+</html>
